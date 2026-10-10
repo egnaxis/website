@@ -1,6 +1,9 @@
+/* logo */
+@import url('https://googleapis.com');
+
 :root {
     --bg-pure: #050505;
-    --accent-raw: #00ff66; /* green / cyber c */
+    --accent-raw: #00ff66;
     --text-bright: #ffffff;
     --text-dim: #555555;
     --border-line: #111111;
@@ -23,7 +26,6 @@ body {
     overflow: hidden;
 }
 
-/* Premium feeling :) */
 .bg-grid {
     position: absolute;
     width: 100%;
@@ -48,15 +50,21 @@ body {
     font-size: 0.65rem;
     color: var(--text-dim);
     letter-spacing: 0.3em;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
-.brand {
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    margin-bottom: 20px;
+/* logo view */
+.brand-logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    margin-bottom: 25px;
     color: var(--text-bright);
+    background: linear-gradient(180deg, #ffffff 0%, #a3a3a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .console {
