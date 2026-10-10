@@ -1,0 +1,98 @@
+:root {
+    --bg-pure: #050505;
+    --accent-raw: #00ff66; /* green / cyber c */
+    --text-bright: #ffffff;
+    --text-dim: #555555;
+    --border-line: #111111;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background-color: var(--bg-pure);
+    color: var(--text-bright);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Premium feeling :) */
+.bg-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, #0a0a0a 1px, transparent 1px),
+        linear-gradient(to bottom, #0a0a0a 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 1;
+}
+
+.panel {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.meta-tag {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.3em;
+    margin-bottom: 30px;
+}
+
+.brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    margin-bottom: 20px;
+    color: var(--text-bright);
+}
+
+.console {
+    font-size: 1rem;
+    color: var(--text-dim);
+    min-height: 24px;
+    margin-bottom: 60px;
+}
+
+#interactive-text {
+    color: var(--text-bright);
+}
+
+.cursor {
+    color: var(--accent-raw);
+    animation: blink 0.8s infinite steps(2);
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.contact-box {
+    border-top: 1px solid var(--border-line);
+    padding-top: 30px;
+}
+
+.mail-btn {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.mail-btn:hover {
+    color: var(--accent-raw);
+}
