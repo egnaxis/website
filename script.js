@@ -1,6 +1,6 @@
 const textElement = document.getElementById("interactive-text");
-// Oštar, fokusiran i muški opis poslovanja
-const phrasing = "Developing games, core cross-platform utilities, and mobile ecosystems.";
+// description
+const phrasing = "Developing high-performance games and desktop-mobile software architecture..";
 let index = 0;
 
 function typeWriter() {
